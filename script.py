@@ -16,7 +16,7 @@ def taskernet(page_token=None):
             with open("taskernet_shares.json", "a") as myfile:
                 share_name = share['name']
                 share_name = share_name.replace('"', '').replace(',', '')
-                myfile.write(json.dumps({'share_name': share_name, 'url': share['url']}) + '\n')
+                myfile.write(json.dumps({'type': share['type'], 'share_name': share_name, 'url': share['url'], 'tags': share['tags']}) + '\n')
                 print(f" {share_name}, {share['url']}")
                 myfile.close()
         else:
