@@ -1,4 +1,10 @@
 # TaskerNet Shares
-TaskerNet Shares is an open source CSV dataset for Tasker projects.<br>
-TaskerNet Shares also provides a scraper for Tasker.<br>
-Check out taskernet_shares.csv for the dataset and script.py for a scraper.<br>
+
+TaskerNet Shares is an open-source JSON dataset designed for Tasker projects.
+
+It also includes a scraper script to help integrate with Tasker.
+
+- **Dataset:** `taskernet_shares.json`
+- **Scraper Script:** `script.py`
+
+Feel free to explore and contribute!
