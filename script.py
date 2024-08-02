@@ -19,7 +19,7 @@ def taskernet(page_token=None):
         if shares:
             with open("taskernet_shares.csv", "a") as myfile:
                 share_name = share['name']
-                share_name = share_name.replace(",", "")
+                share_name = share_name.replace('"', '')
                 myfile.write(f"{share_name}, {share['url']}\n")
                 print(f" {share_name}, {share['url']}")
                 myfile.close()
