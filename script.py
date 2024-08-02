@@ -18,8 +18,10 @@ def taskernet(page_token=None):
     for share in shares:
         if shares:
             with open("taskernet_shares.csv", "a") as myfile:
-                myfile.write(f"{share['name']}, {share['url']}\n")
-                print(f" {share['name']}, {share['url']}")
+                share_name = share['name']
+                share_name = share_name.replace(",", "")
+                myfile.write(f"{share_name}, {share['url']}\n")
+                print(f" {share_name}, {share['url']}")
                 myfile.close()
         else:
             pass
@@ -31,3 +33,4 @@ def taskernet(page_token=None):
         print("No shares found")
 
 taskernet()
+
